@@ -1,0 +1,498 @@
+body{
+	display:flex;
+ 	justify-content:center;
+ 	align-items:center;
+/* 	background-color: #121618;*/
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) no-repeat;
+
+/* 	margin: 10vh;
+*/}
+#dabba{
+  width: 100vw;
+/*  height: 1000vh;
+*/  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.plane{ /* Main Plane */
+	display:flex;
+  	position:relative;
+  	width:1000px;
+    height: 2000px;
+  	transform:rotate(30deg),opacity;
+  	animation:PlaneMotion 6s linear infinite ;
+}
+  @keyframes PlaneMotion{
+  0%   {
+  	transform:rotate( 0deg); 
+
+  }
+  25%  {
+  	transform:rotate( 10deg); 
+
+  }
+  40%  {
+  	transform:rotate( 0deg); 
+ 
+  }
+  75%  {
+  	transform:rotate( -20deg);
+
+  }
+  100% {
+  	transform:rotate( 0deg);  
+
+  }
+/*   transform:rotate(30deg); */
+}
+
+#planeUP{ /* Upper Part */
+	width:600px;
+	height:2px;
+	background-color:white ;
+	display:flex;
+ 	justify-content:center;
+	align-items:center;
+	margin:200px auto;
+/*	box-shadow:inset 0px -17px 0px #c4c4c4;
+*/ 	display:flex;
+  	justify-content:center;
+  	align-items:center;
+}
+#planeLP{ /* Lower Part */
+	width:550px;
+	height:5px;
+  top:300px;
+	background-color:white ;
+	border-radius: 30%;
+	position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+}
+.planeSL{ /*Straight Line */
+	height: 100px;
+	width: 2px;
+  top:200px;
+	background-color:white ;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+
+}
+.planeSLC{ /*Straight Line Center */
+  
+}
+.planeSLL1{ /*Straight Line Left1 */
+  left:250px;
+}
+.planeSLL2{ /*Straight Line Left2 */
+  left:350px;
+}
+  .planeSLR1{ /*Straight Line right1 */
+  right:250px;
+}
+.planeSLR2{ /*Straight Line right */
+  right:350px;
+}
+#planeHRC{  /*Horicontal Line center */
+  height: 4px;
+	width: 300px;
+  top:250px;
+  left:350px;
+	background-color:white ;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+}
+
+.planeCC{  /* Central Circle */
+  height: 110px;
+	width: 110px;
+  top:205px;
+  left:445px;
+  border-radius:50%;
+	background-color:white ;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+}
+.planeCCCircle{ /* Central Circle Cirle Inside it*/
+  height: 80px;
+	width: 80px;
+  top:217px;
+  border: 3px solid #121618;
+  border-radius:50%;
+	background-color:white;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+}
+.planeCCDot{/* Central Circle Dot at the center*/
+  height: 15px;
+	width: 15px;
+  border-radius:50%;
+  background-color:#121618;;
+  top:251px;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+  
+}
+.pakha{
+  top:255px;
+  width:200px;
+  height:5px;
+  background-color:white;
+  border-radius: 50%;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+}
+  .PakhaP1{
+  animation:spin 0.5s linear infinite ;
+}
+  @keyframes spin{
+  to{transform:rotate(0deg);}
+  from{transform:rotate(-360deg);}
+}
+
+  .PakhaP2{
+  transform:rotate(30deg);
+  animation:spin2 0.5s linear infinite ;
+}
+  @keyframes spin2{
+  to{transform:rotate(-30deg);}
+  from{transform:rotate(-390deg);}
+}
+.PakhaP3{
+  transform:rotate(60deg);
+  animation:spin3 0.5s linear infinite ;
+}
+  @keyframes spin3{
+  to{transform:rotate(-60deg);}
+  from{transform:rotate(-420deg);}
+}
+.PakhaP4{
+  transform:rotate(90deg);
+  animation:spin4 0.5s linear infinite ;
+}
+  @keyframes spin4{
+  to{transform:rotate(-90deg);}
+  from{transform:rotate(-450deg);}
+}
+.PakhaP5{
+  transform:rotate(120deg);
+  animation:spin5 0.5s linear infinite ;
+}
+  @keyframes spin5{
+  to{transform:rotate(-120deg);}
+  from{transform:rotate(-480deg);}
+}
+.PakhaP6{
+  transform:rotate(150deg);
+  animation:spin6 0.5s linear infinite ;
+}
+  @keyframes spin6{
+  to{transform:rotate(-150deg);}
+  from{transform:rotate(-510deg);}
+}
+.PakhaP7{
+  transform:rotate(180deg);
+  animation:spin7 0.5s linear infinite ;
+}
+  @keyframes spin7{
+  to{transform:rotate(-180deg);}
+  from{transform:rotate(-540deg);}
+}
+.tedhiLine{
+  height: 2px;
+	width: 200px;
+  top:250px;
+	background-color:white ;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;  
+}
+.tedhiLineL1{
+  left:250px;
+  transform: rotate(-30deg);
+}
+.tedhiLineL2{
+  left:250px;
+  transform: rotate(30deg);
+}
+.tedhiLineR1{
+  right:250px;
+  transform: rotate(-30deg);
+}
+.tedhiLineR2{
+  right:250px;
+  transform: rotate(30deg);
+}
+.WL{
+  height: 30px;
+	width: 5px;
+  border-radius:40%;
+  background-color:white;;
+  top:350px;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+  left:410px;
+}
+.WR{
+  height: 30px;
+	width: 5px;
+  border-radius:40%;
+  background-color:white;;
+  top:350px;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+  right:410px;
+  
+}
+.WCL{
+  height: 1px;
+	width: 187px;
+  top:364px;
+  background-color:white;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center; 
+}
+.WLL{
+   height: 70px;
+	width: 2px;
+  top:300px;
+  background-color:white;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+  transform: rotate(15deg);
+  left:440px;
+  
+}
+.WLR{
+   height: 70px;
+	width: 2px;
+  top:300px;
+  background-color:white;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+  transform: rotate(-15deg);
+  right:440px;
+  
+}
+.WDLL{
+   height: 144px;
+	width: 1px;
+  top:260px;
+  background-color:white;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+  transform: rotate(63deg);
+  left:495px;
+  
+}
+.WDLR{
+  height: 144px;
+	width: 1px;
+  top:260px;
+  background-color:white;
+  position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+  transform: rotate(-63deg);
+  right:495px; 
+}
+.Stars{
+	width: 2px;
+	height: 2px;
+	left: random;
+	border-radius: 30%;
+	background-color: white;
+	position:absolute;
+	display:flex;
+  align-items:center;
+ 	justify-content:center;
+}
+#Img1{
+  width: 300px;
+  top: 10px;
+  left: 100px;
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+/*  transition-property: left;
+*/  animation:moveOut 60s linear infinite ;
+}
+  @keyframes moveOut{
+  0%   {
+     left: -500px;
+  }
+  50%  {
+   left: 1000px; 
+  }
+  100% {
+   left: -500px;
+  }
+}
+#Img2{
+  width: 200px;
+  top: 90px;
+  right: 100px;
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation:moveOut2 40s linear infinite ;
+}
+  @keyframes moveOut2{
+  0%   {
+     right: -500px;
+  }
+  50%  {
+   right: 1000px;
+  }
+  100% {
+   right: -500px;
+  }
+}
+#Img3{
+  width: 260px;
+  top: 250px;
+  right: 100px;
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation:moveOut2 50s linear infinite ;
+}
+  @keyframes moveOut2{
+  0%   {
+     right: -500px;
+  }
+  50%  {
+   right: 1000px;
+  }
+  100% {
+   right: -500px;
+  }
+}
+#Img4{
+  width: 150px;
+  top: 20px;
+  right: 100px;
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation:moveOut2 30s linear infinite ;
+}
+  @keyframes moveOut2{
+  0%   {
+     right: -500px;
+  }
+  50%  {
+   right: 1000px;
+  }
+  100% {
+   right: -500px;
+  }
+}
+#Img5{
+  width: 100px;
+  top: 170px;
+  left: 100px;
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+/*  transition-property: left;
+*/  animation:moveOut 30s linear infinite ;
+}
+  @keyframes moveOut{
+  0%   {
+     left: -400px;
+  }
+  50%  {
+   left: 1000px; 
+  }
+  100% {
+   left: -500px;
+  }
+}
+#Img6{
+  width: 160px;
+  top: 250px;
+  left: 100px;
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+/*  transition-property: left;
+*/  animation:moveOut 70s linear infinite ;
+}
+  @keyframes moveOut{
+  0%   {
+     left: -400px;
+  }
+  50%  {
+   left: 1000px; 
+  }
+  100% {
+   left: -500px;
+  }
+}
+
+#Img7{
+  width: 2000px;
+  top: 300px;
+  left: 100px;
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+/*  transition-property: left;
+*/  animation:moveOut 110s linear infinite ;
+}
+  @keyframes moveOut{
+  0%   {
+     left: -2400px;
+  }
+  50%  {
+   left: 1000px; 
+  }
+  100% {
+   left: -2500px;
+  }
+}
+
+
+
+
+
+
+
+
+
